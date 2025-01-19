@@ -6,7 +6,7 @@ The Mrs needed a script to read and convert CSV to Parquet file and asked if I c
 
 ## Install Necessary Libraries
 Refer to the notes at the end for Fastparquet library.
-```python
+```
 pip install pandas pyarrow
 # or
 pip install pandas fastparquet
@@ -40,7 +40,7 @@ Just for fun i expanded the test code further
 ## Executable file
 The Mrs work machine does not have Python setup so an executable file it is.
 
-```python
+```
 pyinstaller --onefile --icon=cat_ghost.ico main.py
 ```
 
