@@ -5,12 +5,14 @@ The Mrs needed a script to read and convert CSV to Parquet file and asked if I c
 
 
 ## Install Necessary Libraries
-
+Refer to the notes at the end for Fastparquet library.
 ```python
 pip install pandas pyarrow
+# or
+pip install pandas fastparquet
 ```
 ## Test Code
-My initial test code to try out pandas and pyarrow
+My initial test code to try out pandas and PyArrow
 
 ```python
 import pandas as pd
