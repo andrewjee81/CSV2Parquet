@@ -1,6 +1,6 @@
 # CSV 2 Parquet
 
-The Mrs needed a script to read and convert CSV to Parquet file and asked if I could do something in Python. A bit of research on Google and we can do just that with pandas and pyarrow.
+The Mrs needed a script to read and convert CSV to Parquet file and asked if I could do something in Python. A bit of research on Google and we can do just that with [pandas](https://pandas.pydata.org/) and [PyArrow](https://pypi.org/project/pyarrow/).
 
 
 
@@ -41,3 +41,10 @@ The Mrs work machine does not have Python setup so an executable file it is.
 ```python
 pyinstaller --onefile --icon=cat_ghost.ico main.py
 ```
+
+> [!NOTE]
+> An alternative to PyArrow is [Fastparquet](https://pypi.org/project/fastparquet/). To use Fastparquet just change the engine to fastparquet.
+> ```python
+> data.to_parquet(parquet_file, engine='fastparquet', index=False)
+> ```
+> The engine parameter specifies the backend library (pyarrow or fastparquet). If you don't specify it, pandas will automatically select the available one. I have code OCD so I will always specify what to use.
